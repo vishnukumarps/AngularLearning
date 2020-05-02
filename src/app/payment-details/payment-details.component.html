@@ -1,0 +1,21 @@
+<p>payment-details works!</p>
+
+<!--paymentDetailsList-->
+
+<div class="container" >
+ 
+  <div class="card bg-info mt-3 mb-3" *ngFor="let item of paymentDetailsList | async" >
+    <div class="card-body">
+      <h4 class="card-title">{{item.CardOwnerName}}</h4>
+      <label>Card Number  :</label><span class="card-text">{{item.CardNumber}}</span>
+      <br>
+     <label>PMID:  </label> <a href="#" class="card-link">{{item.PMId}}</a>
+     <br>
+      <label>Expiration Date:  </label> <a href="#" class="card-link">{{item.ExpirationDate}}</a>
+      <br>
+      <label>CVV:  </label> <a href="#" class="card-link">{{item.CVV}}</a>
+     <br>
+    </div>
+
+  </div>
+</div>

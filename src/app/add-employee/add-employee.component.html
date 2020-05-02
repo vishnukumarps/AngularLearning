@@ -1,0 +1,27 @@
+<div class="col-md-5">
+<p>add-employee works!</p>
+    <h1 class="text-center">Add Employee</h1>
+
+    <div class="container mt-2 mb-3"> 
+         <form #form="ngForm"  (submit)="onSubmit(form)">
+             <div class="form-group">
+                <label for="email">Name</label>
+                <input type="text" #Name="ngModel" [(ngModel)]="Employee.formData.Name" class="form-control" id="Name" placeholder="Name" name="Name" >
+             </div>
+            <div class="form-group">
+                <label for="pwd">Address</label>
+               <input type="text" #Age="ngModel" [(ngModel)]="Employee.formData.Age" class="form-control" id="name" placeholder="Age" name="Age" >
+            </div>
+            <div class="form-group">
+                <label for="email">Mob</label>
+                <input type="text" #Salary="ngModel" [(ngModel)]="Employee.formData.Salary" class="form-control" id="name" placeholder="Salary" name="Salary" >
+            </div>
+            
+              <button type="submit" class="btn btn-success">Submit</button>
+            
+               </form>
+            
+    </div>
+   
+
+</div>
