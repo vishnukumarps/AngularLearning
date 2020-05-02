@@ -18,6 +18,7 @@ import { PaymentDetailsComponent } from './payment-details/payment-details.compo
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
     AboutUsComponent,
     PaymentDetailsComponent,
     AddEmployeeComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
